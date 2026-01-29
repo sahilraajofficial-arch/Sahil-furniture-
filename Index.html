@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sahil Furniture | Premium Interior Design</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#292524',
+            accent: '#B45309',
+            cream: '#FDFBF7',
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #FDFBF7;
+      color: #292524;
+    }
+  </style>
+</head>
+
+<body class="font-sans">
+
+  <section class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+    <h1 class="font-serif text-4xl md:text-6xl font-bold mb-4">
+      Crafting Bespoke Spaces<br />for Your Dream Home
+    </h1>
+
+    <p class="max-w-xl text-lg text-gray-600 mb-8">
+      Premium furniture & interior solutions designed for modern Indian homes.
+    </p>
+
+    <a href="https://wa.me/919117377527"
+       class="bg-green-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-700 transition">
+      Chat on WhatsApp
+    </a>
+  </section>
+
+  <section class="py-20 bg-white text-center">
+    <h2 class="font-serif text-3xl font-bold mb-10">Our Services</h2>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-6">
+      <div class="p-6 shadow rounded-xl">Bedroom</div>
+      <div class="p-6 shadow rounded-xl">Kitchen</div>
+      <div class="p-6 shadow rounded-xl">Wardrobe</div>
+      <div class="p-6 shadow rounded-xl">Sofa Combed</div>
+      <div class="p-6 shadow rounded-xl">Living Room</div>
+      <div class="p-6 shadow rounded-xl">Drawing Room</div>
+    </div>
+  </section>
+
+  <section class="py-20 text-center bg-cream">
+    <h2 class="font-serif text-3xl font-bold mb-4">Visit Our Showroom</h2>
+    <p class="mb-2">Beside Prince Desi Baar, Panvel, Akurli, Maharashtra 410206</p>
+    <p class="mb-6">Monday – Sunday | 10 AM – 10 PM</p>
+
+    <a href="tel:+919117377527"
+       class="bg-accent text-white px-8 py-3 rounded-full font-semibold">
+      Call Now
+    </a>
+  </section>
+
+</body>
+</html>
