@@ -1,73 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sahil Furniture | Premium Modern Interiors</title>
-    <meta name="description" content="Transform your home with Sahil Furniture. Premium custom furniture, modular kitchens, and luxury interiors in Mumbai & Panvel." />
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Lato', 'sans-serif'],
-              serif: ['Playfair Display', 'serif'],
-            },
-            colors: {
-              brand: {
-                beige: '#F5F5F0', // Soft off-white
-                dark: '#2C2A28', // Deep charcoal brown
-                accent: '#9A5B3D', // Terracotta/Copper
-                light: '#E6DCCF', // Light beige accent
-              }
-            }
-          }
-        }
-      }
-    </script>
-    <style>
-      /* Smooth scrolling */
-      html {
-        scroll-behavior: smooth;
-      }
-      
-      /* Custom scrollbar */
-      ::-webkit-scrollbar {
-        width: 8px;
-      }
-      ::-webkit-scrollbar-track {
-        background: #F5F5F0;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #D6C4B0;
-        border-radius: 4px;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #9A5B3D;
-      }
-    </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react/": "https://esm.sh/react@^19.2.4/",
-    "react": "https://esm.sh/react@^19.2.4",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-    "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
-  }
+<head>
+<meta charset="UTF-8">
+<title>Sahil Furniture – Premium Custom Furniture</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root{
+  --bg:#f7f5f2;
+  --accent:#b87333;
+  --dark:#2b2b2b;
+  --card:#ffffff;
 }
-</script>
-<link rel="stylesheet" href="/index.css">
+*{box-sizing:border-box;font-family:Segoe UI,Arial,sans-serif}
+body{margin:0;background:var(--bg);color:var(--dark);}
+
+/* HERO */
+.hero{
+  background:url('https://drive.google.com/file/d/1yMnhXexJd77rMPOw7el-BGox5uBoP9Dh/view?usp=drivesdk') center/cover no-repeat;
+  padding:100px 20px;
+  text-align:center;
+  color:#fff;
+}
+.hero h1{
+  font-size:42px;
+  font-weight:700;
+  margin-bottom:20px;
+}
+.btn{
+  padding:14px 30px;
+  border-radius:30px;
+  border:none;
+  cursor:pointer;
+  font-size:16px;
+}
+.btn-primary{
+  background:var(--accent);
+  color:#fff;
+}
+.btn-whatsapp{
+  background:#25D366;
+  color:#fff;
+  margin-top:15px;
+}
+
+/* SECTIONS */
+section{padding:70px 20px;max-width:1200px;margin:auto;}
+h2{text-align:center;font-size:32px;margin-bottom:40px}
+
+/* TABS */
+.tabs{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.tab{
+  padding:10px 22px;
+  border-radius:30px;
+  background:#eae6df;
+  cursor:pointer;
+}
+.tab.active{background:var(--accent);color:#fff}
+
+/* IMAGES */
+.images{
+  margin-top:30px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+.images img{
+  width:100%;
+  border-radius:16px;
+  box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+/* WHY */
+.why{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+.why div{
+  background:var(--card);
+  padding:25px;
+  border-radius:20px;
+  text-align:center;
+  box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+/* PROCESS */
+.process{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+.process div{
+  background:var(--card);
+  padding:25px;
+  border-radius:20px;
+  box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+/* CTA */
+.cta{
+  background:linear-gradient(135deg,#c08b5c,#b87333);
+  color:#fff;
+  text-align:center;
+  padding:80px 20px;
+}
+
+/* TESTIMONIAL */
+.testimonials{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+.testimonials div{
+  background:var(--card);
+  padding:20px;
+  border-radius:20px;
+  box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+/* FOOTER */
+footer{text-align:center;padding:30px 20px;font-size:14px}
+</style>
 </head>
-  <body class="bg-brand-beige text-stone-800 antialiased selection:bg-brand-accent selection:text-white">
-    <div id="root"></div>
-  <script type="module" src="/index.tsx"></script>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Premium Custom Furniture for Modern Homes</h1>
+  <button class="btn btn-primary">Book Free Consultation</button><br>
+  <button class="btn btn-whatsapp">Chat on WhatsApp</button>
+</div>
+
+<!-- SERVICES -->
+<section>
+<h2>Our Services</h2>
+<div class="tabs">
+  <div class="tab active" onclick="show('bedroom')">Bedroom</div>
+  <div class="tab" onclick="show('kitchen')">Kitchen</div>
+  <div class="tab" onclick="show('wardrobe')">Wardrobe</div>
+  <div class="tab" onclick="show('living')">Living Room</div>
+</div>
+
+<div class="images" id="gallery"></div>
+</section>
+
+<!-- WHY -->
+<section>
+<h2>Why Choose Sahil Furniture?</h2>
+<div class="why">
+  <div>10 Years Warranty</div>
+  <div>EMI Options Available</div>
+  <div>Maximum Quality Check</div>
+  <div>On-Time Delivery</div>
+  <div>Expert Designers</div>
+</div>
+</section>
+
+<!-- PROCESS -->
+<section>
+<h2>Our Working Process</h2>
+<p style="text-align:center">How we transform your house into a beautiful, functional home</p>
+<div class="process">
+  <div><b>Free Consultation</b><br>Requirement discussion & measurement</div>
+  <div><b>Design & Planning</b><br>2D & 3D visualization</div>
+  <div><b>Manufacturing</b><br>Save up to 40% on showroom margins</div>
+  <div><b>Installation</b><br>Clean finish & quality assurance</div>
+</div>
+</section>
+
+<!-- CTA -->
+<div class="cta">
+  <h2>Transform Your Space Today</h2>
+  <button class="btn btn-whatsapp">Chat on WhatsApp</button>
+</div>
+
+<!-- CONTACT -->
+<section>
+<h2>Contact Us</h2>
+<p style="text-align:center">
+Beside Prince Desi Baar, Panvel, Akurli, Maharashtra 410206<br>
+Monday – Sunday | 10 AM – 10 PM<br>
+<b>+91 9117377527</b>
+</p>
+<button class="btn btn-primary" style="display:block;margin:auto">Schedule Visit</button>
+</section>
+
+<!-- TESTIMONIAL -->
+<section>
+<h2>Customer Feedback</h2>
+<div class="testimonials">
+  <div>⭐⭐⭐⭐⭐<br>“Excellent quality & finish.”</div>
+  <div>⭐⭐⭐⭐⭐<br>“Very professional team.”</div>
+  <div>⭐⭐⭐⭐⭐<br>“Luxury look at fair price.”</div>
+  <div>⭐⭐⭐⭐⭐<br>“On-time delivery.”</div>
+  <div>⭐⭐⭐⭐⭐<br>“Highly recommended.”</div>
+</div>
+</section>
+
+<footer>
+About Sahil Furniture<br>
+Premium Indian furniture brand, combining modern luxury with traditional craftsmanship.<br>
+Trusted by 1000+ happy homes.
+</footer>
+
+<script>
+const data={
+bedroom:[
+'https://drive.google.com/file/d/1BaBdJ6oBEOkByrKURYltiXNAr4b79KmM/view?usp=drivesdk',
+'https://drive.google.com/file/d/10N_gmMn8UiuhsMYDsqA7wl3pXQhCRPdo/view?usp=drivesdk'
+],
+kitchen:[
+'https://drive.google.com/file/d/1-oOMH3PvHMJZMc-QwV-P1Mn63vH3q5A7/view?usp=drivesdk',
+'https://drive.google.com/file/d/1T2n_UjqXPRCS_WRlZ2a0MqSKuVtEKmUK/view?usp=drivesdk'
+],
+wardrobe:[
+'https://drive.google.com/file/d/11cIOhpgkLqrJwa4sndjty0uJpVBkN9iL/view?usp=drivesdk',
+'https://drive.google.com/file/d/1OdFcaY89MFFHqwT_5MU0EMjL8hvVwjQ-/view?usp=drivesdk'
+],
+living:[
+'https://drive.google.com/file/d/1O5vw0QhwiKjhpVhT7FDQKuAbbP3wvvSq/view?usp=drivesdk',
+'https://drive.google.com/file/d/1QnVJhfHW5JnPeT7-ShSi8IIhHWFx81Cj/view?usp=drivesdk'
+]
+};
+
+function show(type){
+document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+event.target.classList.add('active');
+const g=document.getElementById('gallery');
+g.innerHTML='';
+data[type].forEach(i=>{
+  const img=document.createElement('img');
+  img.src=i;
+  g.appendChild(img);
+});
+}
+show('bedroom');
+</script>
+
 </body>
 </html>
