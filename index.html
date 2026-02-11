@@ -1,243 +1,177 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Sahil Furniture – Premium Custom Furniture</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<style>
-:root{
-  --bg:#f7f5f2;
-  --accent:#b87333;
-  --dark:#2b2b2b;
-  --card:#ffffff;
-}
-*{box-sizing:border-box;font-family:Segoe UI,Arial,sans-serif}
-body{margin:0;background:var(--bg);color:var(--dark);}
-
-/* HERO */
-.hero{
-  background:url('https://drive.google.com/file/d/1yMnhXexJd77rMPOw7el-BGox5uBoP9Dh/view?usp=drivesdk') center/cover no-repeat;
-  padding:100px 20px;
-  text-align:center;
-  color:#fff;
-}
-.hero h1{
-  font-size:42px;
-  font-weight:700;
-  margin-bottom:20px;
-}
-.btn{
-  padding:14px 30px;
-  border-radius:30px;
-  border:none;
-  cursor:pointer;
-  font-size:16px;
-}
-.btn-primary{
-  background:var(--accent);
-  color:#fff;
-}
-.btn-whatsapp{
-  background:#25D366;
-  color:#fff;
-  margin-top:15px;
-}
-
-/* SECTIONS */
-section{padding:70px 20px;max-width:1200px;margin:auto;}
-h2{text-align:center;font-size:32px;margin-bottom:40px}
-
-/* TABS */
-.tabs{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
-.tab{
-  padding:10px 22px;
-  border-radius:30px;
-  background:#eae6df;
-  cursor:pointer;
-}
-.tab.active{background:var(--accent);color:#fff}
-
-/* IMAGES */
-.images{
-  margin-top:30px;
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:20px;
-}
-.images img{
-  width:100%;
-  border-radius:16px;
-  box-shadow:0 10px 25px rgba(0,0,0,.15);
-}
-
-/* WHY */
-.why{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-  gap:20px;
-}
-.why div{
-  background:var(--card);
-  padding:25px;
-  border-radius:20px;
-  text-align:center;
-  box-shadow:0 8px 20px rgba(0,0,0,.08);
-}
-
-/* PROCESS */
-.process{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:20px;
-}
-.process div{
-  background:var(--card);
-  padding:25px;
-  border-radius:20px;
-  box-shadow:0 8px 20px rgba(0,0,0,.08);
-}
-
-/* CTA */
-.cta{
-  background:linear-gradient(135deg,#c08b5c,#b87333);
-  color:#fff;
-  text-align:center;
-  padding:80px 20px;
-}
-
-/* TESTIMONIAL */
-.testimonials{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:20px;
-}
-.testimonials div{
-  background:var(--card);
-  padding:20px;
-  border-radius:20px;
-  box-shadow:0 8px 20px rgba(0,0,0,.08);
-}
-
-/* FOOTER */
-footer{text-align:center;padding:30px 20px;font-size:14px}
-</style>
-</head>
-
-<body>
-
-<!-- HERO -->
-<div class="hero">
-  <h1>Premium Custom Furniture for Modern Homes</h1>
-  <button class="btn btn-primary">Book Free Consultation</button><br>
-  <button class="btn btn-whatsapp">Chat on WhatsApp</button>
-</div>
-
-<!-- SERVICES -->
-<section>
-<h2>Our Services</h2>
-<div class="tabs">
-  <div class="tab active" onclick="show('bedroom')">Bedroom</div>
-  <div class="tab" onclick="show('kitchen')">Kitchen</div>
-  <div class="tab" onclick="show('wardrobe')">Wardrobe</div>
-  <div class="tab" onclick="show('living')">Living Room</div>
-</div>
-
-<div class="images" id="gallery"></div>
-</section>
-
-<!-- WHY -->
-<section>
-<h2>Why Choose Sahil Furniture?</h2>
-<div class="why">
-  <div>10 Years Warranty</div>
-  <div>EMI Options Available</div>
-  <div>Maximum Quality Check</div>
-  <div>On-Time Delivery</div>
-  <div>Expert Designers</div>
-</div>
-</section>
-
-<!-- PROCESS -->
-<section>
-<h2>Our Working Process</h2>
-<p style="text-align:center">How we transform your house into a beautiful, functional home</p>
-<div class="process">
-  <div><b>Free Consultation</b><br>Requirement discussion & measurement</div>
-  <div><b>Design & Planning</b><br>2D & 3D visualization</div>
-  <div><b>Manufacturing</b><br>Save up to 40% on showroom margins</div>
-  <div><b>Installation</b><br>Clean finish & quality assurance</div>
-</div>
-</section>
-
-<!-- CTA -->
-<div class="cta">
-  <h2>Transform Your Space Today</h2>
-  <button class="btn btn-whatsapp">Chat on WhatsApp</button>
-</div>
-
-<!-- CONTACT -->
-<section>
-<h2>Contact Us</h2>
-<p style="text-align:center">
-Beside Prince Desi Baar, Panvel, Akurli, Maharashtra 410206<br>
-Monday – Sunday | 10 AM – 10 PM<br>
-<b>+91 9117377527</b>
-</p>
-<button class="btn btn-primary" style="display:block;margin:auto">Schedule Visit</button>
-</section>
-
-<!-- TESTIMONIAL -->
-<section>
-<h2>Customer Feedback</h2>
-<div class="testimonials">
-  <div>⭐⭐⭐⭐⭐<br>“Excellent quality & finish.”</div>
-  <div>⭐⭐⭐⭐⭐<br>“Very professional team.”</div>
-  <div>⭐⭐⭐⭐⭐<br>“Luxury look at fair price.”</div>
-  <div>⭐⭐⭐⭐⭐<br>“On-time delivery.”</div>
-  <div>⭐⭐⭐⭐⭐<br>“Highly recommended.”</div>
-</div>
-</section>
-
-<footer>
-About Sahil Furniture<br>
-Premium Indian furniture brand, combining modern luxury with traditional craftsmanship.<br>
-Trusted by 1000+ happy homes.
-</footer>
-
-<script>
-const data={
-bedroom:[
-'https://drive.google.com/file/d/1BaBdJ6oBEOkByrKURYltiXNAr4b79KmM/view?usp=drivesdk',
-'https://drive.google.com/file/d/10N_gmMn8UiuhsMYDsqA7wl3pXQhCRPdo/view?usp=drivesdk'
-],
-kitchen:[
-'https://drive.google.com/file/d/1-oOMH3PvHMJZMc-QwV-P1Mn63vH3q5A7/view?usp=drivesdk',
-'https://drive.google.com/file/d/1T2n_UjqXPRCS_WRlZ2a0MqSKuVtEKmUK/view?usp=drivesdk'
-],
-wardrobe:[
-'https://drive.google.com/file/d/11cIOhpgkLqrJwa4sndjty0uJpVBkN9iL/view?usp=drivesdk',
-'https://drive.google.com/file/d/1OdFcaY89MFFHqwT_5MU0EMjL8hvVwjQ-/view?usp=drivesdk'
-],
-living:[
-'https://drive.google.com/file/d/1O5vw0QhwiKjhpVhT7FDQKuAbbP3wvvSq/view?usp=drivesdk',
-'https://drive.google.com/file/d/1QnVJhfHW5JnPeT7-ShSi8IIhHWFx81Cj/view?usp=drivesdk'
-]
-};
-
-function show(type){
-document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
-event.target.classList.add('active');
-const g=document.getElementById('gallery');
-g.innerHTML='';
-data[type].forEach(i=>{
-  const img=document.createElement('img');
-  img.src=i;
-  g.appendChild(img);
-});
-}
-show('bedroom');
-</script>
-
-</body>
-</html>
+<!DOCTYPE html>  <html lang="en">  
+<head>  
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<title>Sahil Furniture</title>  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">  
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>  <style>  
+*{margin:0;padding:0;box-sizing:border-box}  
+body{font-family:Inter,sans-serif;background:#f9f7f4;color:#3a2c1a}  
+h1,h2,h3{font-family:'Playfair Display',serif}  
+.container{width:90%;max-width:1200px;margin:auto}  
+.section{padding:90px 0}  
+  
+/* HEADER */  
+header{position:fixed;width:100%;background:#f1eee9;z-index:99}  
+header .container{display:flex;justify-content:space-between;align-items:center;padding:16px 0}  
+.logo{display:flex;align-items:center;gap:10px}  
+.logo .sahil{font-size:28px;font-weight:700;color:#4a2e23}  
+.logo .furniture{font-size:28px;letter-spacing:4px;color:#c28a4a}  
+  
+/* BUTTONS */  
+.btn{padding:14px 32px;border-radius:40px;font-weight:500;display:inline-block}  
+.btn-primary{background:#6b3f2e;color:#fff}  
+.btn-green{background:#25D366;color:#fff}  
+  
+/* HERO */  
+.hero{  
+height:100vh;  
+background:url('images/hero.jpg') center/cover no-repeat;
+display:flex;align-items:center;position:relative;color:#fff}  
+.hero::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.55)}  
+.hero-content{position:relative;text-align:center;width:100%}  
+.hero h1{font-size:52px}  
+.hero p{font-size:20px;margin:15px 0}  
+  
+/* SERVICES */  
+.tabs{text-align:center;margin-bottom:30px}  
+.tabs button{margin:6px;padding:10px 24px;border-radius:30px;border:none;background:#eee;cursor:pointer}  
+.tabs button.active{background:#8b6f47;color:#fff}  
+.gallery{display:none;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}  
+.gallery.active{display:grid}  
+.gallery img{width:100%;height:260px;object-fit:cover;border-radius:14px}  
+  
+/* SOFA SPECIALIST */  
+.specialist{  
+background:#f3ece4;  
+border-radius:20px;  
+padding:60px}  
+.specialist ul{list-style:none;margin-top:30px}  
+.specialist li{  
+font-size:18px;  
+margin:18px 0;  
+display:flex;  
+align-items:center;  
+gap:14px}  
+.specialist li::before{  
+content:"✔";  
+background:#c28a4a;  
+color:#fff;  
+width:26px;height:26px;  
+display:flex;align-items:center;justify-content:center;  
+border-radius:50%}  
+  
+/* WHY + PROCESS */  
+.features,.process,.reviews{display:grid;gap:25px}  
+.features,.process{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}  
+.card{background:#fff;padding:30px;border-radius:16px;text-align:center}  
+  
+/* REVIEWS */  
+.reviews{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}  
+.review{background:#fff;padding:25px;border-radius:16px}  
+  
+/* FOOTER */  
+footer{background:#1f160b;color:#cbbca3;text-align:center;padding:60px 20px}  
+footer a{color:#cbbca3;margin:0 10px;font-size:20px}  
+</style>  </head>  <body>  <header>  
+  <div class="container">  
+    <div class="logo">  
+      <span class="sahil">SAHIL</span>  
+      <span class="furniture">FURNITURE</span>  
+    </div>  
+    <a class="btn btn-primary" href="https://wa.me/919117377527">Book Now</a>  
+  </div>  
+</header>  <section class="hero">  
+  <div class="hero-content">  
+    <h1>Premium Custom Furniture in Mumbai</h1>  
+    <p>Premium Custom Furniture for Modern Homes</p><br>  
+    <a class="btn btn-primary" href="https://wa.me/919117377527">Book Free Consultation</a>  
+    <a class="btn btn-green" href="https://wa.me/919117377527">WhatsApp Chat</a>  
+  </div>  
+</section>  <!-- OUR SERVICES -->  <section class="section">  
+<div class="container">  
+<h2 style="text-align:center">Our Services</h2>  <div class="tabs">  
+<button class="active" onclick="show('bedroom')">Bedroom</button>  
+<button onclick="show('kitchen')">Kitchen</button>  
+<button onclick="show('wardrobe')">Wardrobe</button>  
+<button onclick="show('living')">Living Room</button>  
+</div>  <div id="bedroom" class="gallery active">  
+<img src="https://picsum.photos/seed/1/600/600">  
+<img src="https://picsum.photos/seed/2/600/600">  
+<img src="https://picsum.photos/seed/3/600/600">  
+</div>  <div id="kitchen" class="gallery">  
+<img src="https://picsum.photos/seed/4/600/600">  
+<img src="https://picsum.photos/seed/5/600/600">  
+</div>  <div id="wardrobe" class="gallery">  
+<img src="https://picsum.photos/seed/6/600/600">  
+<img src="https://picsum.photos/seed/7/600/600">  
+</div>  <div id="living" class="gallery">  
+<img src="https://picsum.photos/seed/8/600/600">  
+<img src="https://picsum.photos/seed/9/600/600">  
+</div>  
+</div>  
+</section>  <!-- SOFA SPECIALIST -->  <section class="section">  
+<div class="container specialist">  
+<h2 style="text-align:center">Specialists</h2>  
+<p style="text-align:center;margin-top:15px">  
+Every home is unique, and so should be your sofa.  
+</p>  <ul>  
+<li>Modern L-Shape Sofas</li>  
+<li>3 / 2 / 1 Seater Sets</li>  
+<li>Luxury Recliners</li>  
+<li>Classic Chesterfield</li>  
+<li>Premium Leather Finish</li>  
+<li>Teak Wood Framework</li>  
+</ul>  
+</div>  
+</section>  <!-- WHY CHOOSE -->  <section class="section">  
+<div class="container">  
+<h2 style="text-align:center">Why Choose Sahil Furniture</h2>  
+<div class="features">  
+<div class="card">10 Years Warranty</div>  
+<div class="card">EMI Options</div>  
+<div class="card">Premium Materials</div>  
+<div class="card">On-Time Delivery</div>  
+</div>  
+</div>  
+</section>  <!-- WORKING PROCESS -->  <section class="section">  
+<div class="container">  
+<h2 style="text-align:center">Our Working Process</h2>  
+<div class="process">  
+<div class="card">1️⃣ Free Consultation</div>  
+<div class="card">2️⃣ Design & Quotation</div>  
+<div class="card">3️⃣ Manufacturing</div>  
+<div class="card">4️⃣ Installation & Delivery</div>  
+</div>  
+</div>  
+</section>  <!-- REVIEWS -->  <section class="section">  
+<div class="container">  
+<h2 style="text-align:center">Customer Reviews</h2>  
+<div class="reviews">  
+<div class="review">★★★★★<br><b>Rohit – Mumbai</b></div>  
+<div class="review">★★★★★<br><b>Ayesha – Andheri</b></div>  
+<div class="review">★★★★★<br><b>Imran – Bandra</b></div>  
+</div>  
+</div>  
+</section>  <!-- CTA -->  <section class="section" style="background:#2a1e0f;color:#fff;text-align:center">  
+<h2>Transform Your Home Today</h2>  
+<p>Book a free consultation</p><br>  
+<a class="btn btn-green" href="https://wa.me/919117377527">WhatsApp</a>  
+</section>  <footer>  
+<p>© 2026 Sahil Furniture</p><br>  
+<a href="https://facebook.com/sahilfurniture.in" target="_blank">
+  <i class="fab fa-facebook-f"></i>
+</a>
+<a href="https://instagram.com/sahilfurniture.in" target="_blank">
+  <i class="fab fa-instagram"></i>
+</a>
+<a href="https://wa.me/919117377527" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+</footer>  <script>  
+function show(id){  
+document.querySelectorAll('.gallery').forEach(g=>g.classList.remove('active'));  
+document.getElementById(id).classList.add('active');  
+event.target.classList.add('active');  
+}  
+</script>  </body>  
+</html>  
